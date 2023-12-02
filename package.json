@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "format": "prettier --write .",
-    "day1": "tsx ./day1/index.ts"
+    "day1": "tsx ./day1/index.ts",
+    "day2": "tsx ./day2/index.ts"
   },
   "keywords": [],
   "author": "",
