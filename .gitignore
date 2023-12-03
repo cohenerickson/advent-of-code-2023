@@ -1,2 +1,4 @@
 node_modules/
 day*/input.txt
+day*-rust/target/
+day*-rust/Cargo.lock
