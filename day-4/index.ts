@@ -13,8 +13,7 @@ function part1() {
   for (const card of cards) {
     const numberOfMatches = getMatches(card);
 
-    sum +=
-      numberOfMatches.length > 0 ? Math.pow(2, numberOfMatches.length - 1) : 0;
+    sum += numberOfMatches.length > 0 ? 2 ** (numberOfMatches.length - 1) : 0;
   }
 
   return sum;
