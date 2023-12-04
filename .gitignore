@@ -1,4 +1,10 @@
+# Modules
 node_modules/
-day*/input.txt
-day*-rust/target/
-day*-rust/Cargo.lock
+day-*-rust/target/
+
+# Input
+day-*/input.txt
+
+# Templates
+day-*-rust/Cargo.lock
+day-x*/

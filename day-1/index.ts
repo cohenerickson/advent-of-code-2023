@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 
-const input = await fs.readFile("./day1/input.txt", "utf-8");
+const input = await fs.readFile("./day-1/input.txt", "utf-8");
 
 const lines = input.trim().split("\n");
 

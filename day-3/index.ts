@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 
-const input = await fs.readFile("./day3/input.txt", "utf-8");
+const input = await fs.readFile("./day-3/input.txt", "utf-8");
 
 let matrix = input
   .trim()
