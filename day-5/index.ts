@@ -65,7 +65,30 @@ function getDest(seed: number): number {
   return dest;
 }
 
-function part2() {}
+function part2() {
+  let min = Number.MAX_SAFE_INTEGER;
+
+  for (let i = 0; i < seeds.length; i += 2) {
+    let baseSeed = seeds[i];
+
+    for (let j = 0; j < seeds[i + 1]; j++) {
+      const seed = baseSeed + j;
+
+      const dest = getDest(seed);
+
+      if (dest < min) {
+        min = dest;
+        console.log(seed, min);
+      }
+    }
+
+    console.log(
+      `Seed range ${baseSeed}...${baseSeed + seeds[i + 1] - 1} complete`
+    );
+  }
+
+  return min;
+}
 
 console.log(`Part 1: ${part1()}`);
 console.log(`Part 2: ${part2()}`);
