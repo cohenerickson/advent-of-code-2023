@@ -32,13 +32,8 @@ function getMaps(): number[][][] {
 function part1() {
   let min = Number.MAX_SAFE_INTEGER;
 
-  // loop through seeds
   for (let i = 0; i < seeds.length; i++) {
-    let dest = getDest(seeds[i]);
-
-    if (dest < min) {
-      min = dest;
-    }
+    min = Math.min(min, getDest(seeds[i]));
   }
 
   return min;
@@ -72,19 +67,8 @@ function part2() {
     let baseSeed = seeds[i];
 
     for (let j = 0; j < seeds[i + 1]; j++) {
-      const seed = baseSeed + j;
-
-      const dest = getDest(seed);
-
-      if (dest < min) {
-        min = dest;
-        console.log(seed, min);
-      }
+      min = Math.min(min, getDest(baseSeed + j));
     }
-
-    console.log(
-      `Seed range ${baseSeed}...${baseSeed + seeds[i + 1] - 1} complete`
-    );
   }
 
   return min;
