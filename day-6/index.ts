@@ -10,8 +10,6 @@ let lines = input
 const times = lines[0].split(/\s+/).slice(1).map(Number);
 const distances = lines[1].split(/\s+/).slice(1).map(Number);
 
-console.log(times, distances);
-
 function part1() {
   let product = 1;
 
