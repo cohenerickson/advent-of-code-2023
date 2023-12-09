@@ -13,7 +13,8 @@
     "day5": "tsx ./day-5/index.ts",
     "day6": "tsx ./day-6/index.ts",
     "day7": "tsx ./day-7/index.ts",
-    "day8": "tsx ./day-8/index.ts"
+    "day8": "tsx ./day-8/index.ts",
+    "day9": "tsx ./day-9/index.ts"
   },
   "keywords": [],
   "author": "",
